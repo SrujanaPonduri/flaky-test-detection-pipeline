@@ -2,12 +2,12 @@
 ###### Originally Authored By: Your favorite loaf, Loafyy
 ###### Contributors: Samuel Song, Srujana Ponduri, Rithanya Rakesh, Keerthana Krishna
 
-## 📌 Overview
+##  Overview
 This repository provides an automated, scalable GitHub Actions pipeline designed to detect flaky tests across **Maven-based Java 8 projects** in the IDoFT dataset (`pr-data.csv`).
 It runs **10 rounds each** of two detection tools: **iDFlakies** and **NonDex** along with **FlakeSync** via standalone CLI commands without modifying the `pom.xml` or other features of the projects.
 After each run, results are parsed and aggregated into a clean set of csv files: one for iDFlakies, NonDex, and FlakeSync.
 
-### ⚠️ DISCLAIMER
+### DISCLAIMER
 As this is an automated process, tests *will* be missed due to version mismatches, missing/undetected `pom.xml`, or other factors.
 
 ---
@@ -29,7 +29,7 @@ As this is an automated process, tests *will* be missed due to version mismatche
 
 ---
 
-## 📊 Summary Output Format
+## Summary Output Format
 
 The workflow outputs three aggregated CSV artifacts:
 * `idflakies_summary.csv`
@@ -46,7 +46,7 @@ Each CSV strictly adheres to the following 3-column format:
 
 ---
 
-## 🚀 Usage Guide:
+## Usage Guide:
 This repo requires minimal setup and zero YAML config editing.
 
 ### Step 1: Fork This Repository
